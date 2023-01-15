@@ -148,26 +148,50 @@ aside p {padding: 12px 10px;}
               margin-top:1%;}
 .work-content .page-title{text-align:center;}
 .work-content p{font-size:1.125rem;
-                margin:10px 0 0;
-                text-align: center;}
-.worktext{float:left;}
 
-.grid{display:grid;
-      gap:26px;
-      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-      margin-top:6%;
-      margin-bottom:50px;}
+                text-align: center;
+                margin:auto;
+                margin-bottom: 100px;}
 
-.desk{width:50%;
-      height:auto;
-      margin: 20px;
-      float: left;
-      margin-right: 30px;}
 
-.apple{width:70%;
-       height:auto;
-       margin:20px;
-       margin-right:30px;}
+.work-body{margin:auto;
+margin-bottom: 20px;}
+.flex{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.box{
+
+	margin: auto;
+    list-style: none;
+
+}
+
+
+.box{
+	opacity: 0;
+}
+
+.fadeUp {
+animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
 /*Live2D_____________________________________________________*/
 .boy1{width:500px;
       height:900px;
